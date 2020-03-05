@@ -1,0 +1,78 @@
+/*****************************************************************************/
+/*
+/* Common
+/*
+/*****************************************************************************/
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+  background-color: #FFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+h1 { margin-bottom: 1em; }
+p { margin: 1em 0; }
+
+a         { color: #00a; }
+a:hover   { color: #000; }
+a:visited { color: #a0a; }
+
+/*****************************************************************************/
+/*
+/* Site
+/*
+/*****************************************************************************/
+
+.main{
+  margin-top:5em;
+}
+
+.footer {
+  font-size: 80%;
+  color: #666;
+  border-top: 4px solid #eee;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.footer .contact {
+  float: left;
+  margin-right: 3em;
+}
+
+.footer .contact a {
+  color: #8085C1;
+}
+
+#copy-button {
+  /*width: 20px;*/
+  /*height: 25px;*/
+  /*line-height: 25px;*/
+  text-align: center;
+  padding: 0 2px;
+  background-color: #4231D1;
+  border: 1px solid;
+  display: inline-block;
+}
+
+
+th,td{
+  padding:2px 0;
+}
+
+input{
+  line-height:1.5em;
+}
+
+input,#result{
+  font-size:16px;
+}
