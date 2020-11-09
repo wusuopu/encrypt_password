@@ -47,7 +47,7 @@
     if (version === '2') {
       code16 = code16.split("");
       i = 0;
-      flags = {lower: false, num: false}
+      var flags = {lower: false, num: false}
       while (i < code16.length) {
         if (code16[i].match(/[a-f]/) && !flags.lower) {
           code16[i] = code16[i].toUpperCase();
