@@ -4,6 +4,14 @@
 import hashlib
 import getpass
 import sys
+import subprocess
+
+
+def clicopy(content):
+    p = subprocess.Popen(['pbcopy'], shell=True, stdin=subprocess.PIPE)
+    p.stdin.write(content.encode('utf8'))
+    p.stdin.close()
+    p.wait()
 
 
 def ensure_bytes(value):
@@ -77,4 +85,6 @@ if __name__ == '__main__':
     else:
         identify = input('identify:')
     version = 2 if len(sys.argv) > 1 and sys.argv[1] == '-v2' else 1
-    print('result: %s' % count_code(pswd, identify, version))
+    ret = count_code(pswd, identify, version)
+    print('result: %s' % ret)
+    clicopy(ret)
